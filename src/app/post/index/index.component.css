@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+
+img{
+  max-width: 150px;
+  max-height: 150px;
+}
+
+
+
+h2{
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+}
+
+.table {
+  padding: 10px;
+  padding-top: 15px;
+
+}
+
+.tr,
+.head {
+  border: 1px solid #ddd;
+  padding: 8px;
+
+}
+
+.head {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #04AA6D;
+  color: white;
+}
+
+h2 {
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.btnAusu {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  background-color: #081f2d;
+  border-radius: 29px;
+  border: 1px solid #081F2D;
+  color: white;
+  padding: 10px 45px;
+  cursor: pointer;
+  transition: 1s;
+  border-width: 2px;
+}
+
+.btnAusu:hover {
+  background-color: white;
+  color: #081F2D;
+  border-color: #081F2D;
+  border-width: 2px;
+  transition: 1s;
+}
+
+
+.btnEdi {
+  background-color: #ff8000;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  flex-grow: 1;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 90px;
+  padding: 0 16px 0 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  align-content: center;
+}
+
+.btnEdi:hover {
+  background-color: #e4e6eb;
+  color: #050505;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+
+.btnEli:hover {
+  background-color: #e4e6eb;
+  color: #050505;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.btnEli {
+  background-color: #f21818;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  flex-grow: 1;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 90px;
+  padding: 0 16px 0 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  align-content: center;
+}
+
+
+.btnView {
+  flex-grow: 1;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  background-color: #1877f2;
+  flex-grow: 1;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  height: 36px;
+  line-height: 20px;
+  margin-left: 8px;
+  margin-right: 6px;
+  min-width: 90px;
+  padding: 0 16px 0 16px;
+  transition: 0.3s;
+  cursor: pointer;
+  align-content: center;
+}
+
+.btnView:hover {
+  background-color: #e4e6eb;
+  color: #050505;
+  font-size: 15px;
+  transition: 0.3s;
+}

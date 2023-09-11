@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="container">
+    <h1>Actualizar Producto</h1>
+
+    <button routerLink="/post/index" class="btnVol">Volver</button>
+
+    <form class="pdTop" [formGroup]="form" (ngSubmit)="submit()">
+
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <textarea formControlName="name" id="name" type="text" [(ngModel)]="post.name"
+                class="form-control"></textarea>
+            <div *ngIf="f['name'].touched && f['name'].invalid" class="alert alert-danger">
+                <div *ngIf="f['name'].errors && f['name'].errors['required']">Se requiere nombre.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="description">Descripcion</label>
+            <textarea formControlName="description" id="description" type="text" [(ngModel)]="post.description"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['description'].touched && f['description'].invalid" class="alert alert-danger">
+                <div *ngIf="f['description'].errors && f['description'].errors['required']">Se requiere la descripcion.
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="valor">Valor</label>
+            <textarea formControlName="valor" id="valor" type="number" [(ngModel)]="post.valor" class="form-control">
+            </textarea>
+            <div *ngIf="f['valor'].touched && f['valor'].invalid" class="alert alert-danger">
+                <div *ngIf="f['valor'].errors && f['valor'].errors['required']">Se requiere el valor.</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="imageURL">Imagen</label>
+            <textarea formControlName="imageURL" id="imageURL" type="string" [(ngModel)]="post.imageURL"
+                class="form-control">
+            </textarea>
+            <div *ngIf="f['imageURL'].touched && f['imageURL'].invalid" class="alert alert-danger">
+                <div *ngIf="f['imageURL'].errors && f['imageURL'].errors['required']">Se requiere la URL de la imagen.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <img src={{post.imageURL}}>
+        </div>
+
+
+        <button class="btnGuar" type="submit" [disabled]="!form.valid">Actualizar</button>
+    </form>
+</div>
